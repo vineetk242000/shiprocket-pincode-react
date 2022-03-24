@@ -58,11 +58,11 @@ function App() {
 
 1. Required Props
 
-| Name         | Description                                                    |
-| ------------ | -------------------------------------------------------------- |
-| pickupPinode | Props to fetch delivery time according to your pickup location |
-| email        | Props to feed registered email with shiprocket api services    |
-| password     | Props for the password of the api user                         |
+| Name          | Description                                                    |
+| ------------- | -------------------------------------------------------------- |
+| pickupPincode | Props to fetch delivery time according to your pickup location |
+| email         | Props to feed registered email with shiprocket api services    |
+| password      | Props for the password of the api user                         |
 
 ### Development and Testing
 

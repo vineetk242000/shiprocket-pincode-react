@@ -8,8 +8,13 @@
   },
   "keywords": [
     "shiprocket",
-    "react"
+    "react",
+    "shiprocket-pincode-react"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vineetk242000/shiprocket-pincode-react.git"
+  },
   "author": "vineet",
   "license": "ISC",
   "devDependencies": {
