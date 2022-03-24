@@ -23,8 +23,6 @@ Shiprocket React Pincode is a published NPM module that can be integrated inside
 
 ## About
 
-The four input fields are wrapped inside an `<div>` element and each input field is also wrapped inside `<div>`. So that a user can style it according to the need in the project.
-
 Whenever the wrong Pincode/non serviceable PinCode is entered red border appears on the pin code input field and on entering a right pin code the delivery time is shown below the input field
 
 ### Note
@@ -58,15 +56,13 @@ function App() {
 
 ## Pincode Props
 
-1. Props for changing CSS properties
+1. Required Props
 
-| Name         | Description                                                              |
-| ------------ | ------------------------------------------------------------------------ |
-| pickupPinode | Props to fetch delivery time according to your pickup location(required) |
-| email        | Props to feed registered email with shiprocket api services (required)   |
-| password     | Props for the password of the api user                                   |
-
-```
+| Name         | Description                                                    |
+| ------------ | -------------------------------------------------------------- |
+| pickupPinode | Props to fetch delivery time according to your pickup location |
+| email        | Props to feed registered email with shiprocket api services    |
+| password     | Props for the password of the api user                         |
 
 ### Development and Testing
 
@@ -80,8 +76,10 @@ function App() {
    Now just run `npm start` from `test-server` directory to launch the test-server.
 8. You don't need to stop this server, the changes made in the module will be reflected automatically each time you build them using `npm run build`
 
-
 ## Owner
 
 [Vineet Kumar](https://github.com/vineetk242000) <img src="https://img.shields.io/twitter/follow/vineetk242000?label=Follow&style=social" />
+
+```
+
 ```
