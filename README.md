@@ -1,6 +1,6 @@
-# Shiprocket React Pincode
+# Shiprocket Pincode React
 
-Shiprocket React Pincode is a published NPM module that can be integrated inside any ReactJS application. It is used to fetch delivery time through shiprocket when user enters valid Pin-Code. On entering a valid Pin-Code, a GET request is made to the Shiprocket API and the useful information is extracted and result is displayed to the user.
+Shiprocket Pincode React is a published NPM module that can be integrated inside any ReactJS application. It is used to fetch delivery time through shiprocket when user enters valid Pin-Code. On entering a valid Pin-Code, a GET request is made to the Shiprocket API and the useful information is extracted and result is displayed to the user.
 
 <div align="center">
     <img src="https://forthebadge.com/images/badges/powered-by-responsibility.svg" >
@@ -32,14 +32,14 @@ This will only work for Indian Pincodes.
 ## Working
 
 ```js
-import Pincode from "shiprocket-react-pincode";
+import Pincode from "shiprocket-pincode-react";
 ```
 
 ### JS
 
 ```js
 import React, { useState, useEffect } from "react";
-import Pincode from "shiprocket-react-pincode";
+import Pincode from "shiprocket-pincode-react";
 
 function App() {
   return (
@@ -66,20 +66,16 @@ function App() {
 
 ### Development and Testing
 
-1. Set-up the Shiprocket-React-Pincode module by dowloading its dependencies, using `npm install` command.
+1. Set-up the Shiprocket-Pincode-React module by dowloading its dependencies, using `npm install` command.
 2. Build the module using `npm run build`
 3. Link the module for testing using `npm link` command.
 4. Change your directory to `test-server` directory, using `cd test-server`
 5. Install the dependecies using `npm install`
-6. Now run `npm link shiprocket-react-pincode`
-7. Congratulations! You have set-up the test server for shiprocket-react-pincode.
+6. Now run `npm link shiprocket-pincode-react`
+7. Congratulations! You have set-up the test server for shiprocket-pincode-react.
    Now just run `npm start` from `test-server` directory to launch the test-server.
 8. You don't need to stop this server, the changes made in the module will be reflected automatically each time you build them using `npm run build`
 
 ## Owner
 
 [Vineet Kumar](https://github.com/vineetk242000) <img src="https://img.shields.io/twitter/follow/vineetk242000?label=Follow&style=social" />
-
-```
-
-```
