@@ -147,13 +147,4 @@ var PinCodeComponent = function PinCodeComponent(props) {
   }, message)));
 };
 
-var returnLibrary = function returnLibrary() {
-  return {
-    Component: PinCodeComponent // you can add here other components that you want to export
-
-  };
-};
-
-var index = returnLibrary();
-
-module.exports = index;
+module.exports = PinCodeComponent;

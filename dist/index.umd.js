@@ -146,15 +146,6 @@
     }, message)));
   };
 
-  var returnLibrary = function returnLibrary() {
-    return {
-      Component: PinCodeComponent // you can add here other components that you want to export
-
-    };
-  };
-
-  var index = returnLibrary();
-
-  return index;
+  return PinCodeComponent;
 
 }));
