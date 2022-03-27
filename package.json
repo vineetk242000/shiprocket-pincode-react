@@ -1,6 +1,6 @@
 {
   "name": "shiprocket-pincode-react",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "verify pincode for shipping",
   "main": "dist/index.cjs.js",
   "scripts": {
@@ -9,7 +9,9 @@
   "keywords": [
     "shiprocket",
     "react",
-    "shiprocket-pincode-react"
+    "shiprocket-pincode-react",
+    "fetch delivery time",
+    "react-component"
   ],
   "repository": {
     "type": "git",

@@ -69,7 +69,7 @@ const PinCodeComponent = (props) => {
   return (
     <div className="parent-container">
       <div
-        className="top"
+        className="input-container"
         style={{ borderBottom: `solid 1px ${error ? "red" : "#2874f0"}` }}
       >
         <svg
@@ -87,10 +87,7 @@ const PinCodeComponent = (props) => {
           ></path>
         </svg>
         <form onSubmit={(e) => fetchDeliveryTime(e)}>
-          <input
-            className="input"
-            onChange={(e) => setPincode(e.target.value)}
-          />
+          <input onChange={(e) => setPincode(e.target.value)} />
         </form>
       </div>
       <div className="delivery-time-container">

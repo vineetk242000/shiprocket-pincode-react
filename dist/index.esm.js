@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 
 var e=[],t=[];function n(n,r){if(n&&"undefined"!=typeof document){var a,s=!0===r.prepend?"prepend":"append",d=!0===r.singleTag,i="string"==typeof r.container?document.querySelector(r.container):document.getElementsByTagName("head")[0];if(d){var u=e.indexOf(i);-1===u&&(u=e.push(i)-1,t[u]={}),a=t[u]&&t[u][s]?t[u][s]:t[u][s]=c();}else a=c();65279===n.charCodeAt(0)&&(n=n.substring(1)),a.styleSheet?a.styleSheet.cssText+=n:a.appendChild(document.createTextNode(n));}function c(){var e=document.createElement("style");if(e.setAttribute("type","text/css"),r.attributes)for(var t=Object.keys(r.attributes),n=0;n<t.length;n++)e.setAttribute(t[n],r.attributes[t[n]]);var a="prepend"===s?"afterbegin":"beforeend";return i.insertAdjacentElement(a,e),e}}
 
-var css = ".delivery-time-container p {\n  font-weight: 500;\n  font-family: Arial, Helvetica, sans-serif;\n  font-size: 14px;\n}\n\n.top {\n  padding: 3px;\n  border-bottom: solid 1px #2874f0;\n  display: flex;\n  align-items: center;\n  max-width: 250px;\n}\n\ninput {\n  border: none;\n}\n\ninput:focus {\n  outline: none;\n  border: none;\n}\n";
+var css = ".parent-container {\n  padding: 3px;\n}\n\n.delivery-time-container {\n  margin: 3px 0;\n}\n\n.delivery-time-container p {\n  font-weight: 500;\n  font-family: Arial, Helvetica, sans-serif;\n  font-size: 14px;\n}\n\n.input-container {\n  border-bottom: solid 1px #2874f0;\n  display: flex;\n  align-items: center;\n  max-width: 250px;\n}\n\ninput {\n  border: none;\n  background-color: transparent;\n}\n\ninput:focus {\n  outline: none;\n  border: none;\n}\n";
 n(css,{});
 
 var PinCodeComponent = function PinCodeComponent(props) {
@@ -105,7 +105,7 @@ var PinCodeComponent = function PinCodeComponent(props) {
   return /*#__PURE__*/React.createElement("div", {
     className: "parent-container"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "top",
+    className: "input-container",
     style: {
       borderBottom: "solid 1px ".concat(error ? "red" : "#2874f0")
     }
@@ -125,7 +125,6 @@ var PinCodeComponent = function PinCodeComponent(props) {
       return fetchDeliveryTime(e);
     }
   }, /*#__PURE__*/React.createElement("input", {
-    className: "input",
     onChange: function onChange(e) {
       return setPincode(e.target.value);
     }

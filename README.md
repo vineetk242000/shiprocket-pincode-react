@@ -38,16 +38,16 @@ import Pincode from "shiprocket-pincode-react";
 ### JS
 
 ```js
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Pincode from "shiprocket-pincode-react";
 
 function App() {
   return (
     <div className="App">
       <Pincode
-        pickupPincode="Your pickup pincode"
-        email="the registered email with shiprocket api services"
-        password="password of the api user"
+        pickupPincode="your pickup pincode"
+        email="the registered email with shiprocket api service"
+        password="password of the registered api user"
       />
     </div>
   );

@@ -1,11 +1,18 @@
+.parent-container {
+  padding: 3px;
+}
+
+.delivery-time-container {
+  margin: 3px 0;
+}
+
 .delivery-time-container p {
   font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
 
-.top {
-  padding: 3px;
+.input-container {
   border-bottom: solid 1px #2874f0;
   display: flex;
   align-items: center;
@@ -14,6 +21,7 @@
 
 input {
   border: none;
+  background-color: transparent;
 }
 
 input:focus {
